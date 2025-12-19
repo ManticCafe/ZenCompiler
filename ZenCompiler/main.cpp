@@ -24,7 +24,7 @@ int main(int argc,char *argv[]) {
 				return -1;
 			}
 		}
-		if (!isTS(argv[i]) && strcmp(argv[i - 1], "-o") != 0) {
+		if (argv[i][0] != '-' && strcmp(argv[i - 1], "-o") != 0 && !isTS(argv[i])) {
 			printf("\"%s\" is an unsupported file extension", getFileExtension(argv[i]).c_str());
 			return -1;
 		}
@@ -82,6 +82,6 @@ int main(int argc,char *argv[]) {
 	if (objFile != 0) {
 		fclose(objFile);
 	}
-	printf("compiler success");
+	printf("compiler success!");
 	return 0;
 }

@@ -17,7 +17,7 @@ std::string getFileExtension(char* fileName) {
 	char dot = '.';
 	const char* lastDot = strrchr(fileName, (int)dot);
 	if (!lastDot || lastDot == fileName) {
-		return NULL;
+		return "";
 	}
 	return std::string(lastDot);
 }
