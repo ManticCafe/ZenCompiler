@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ZenCompiler/ZenCompiler.vcxproj" Id="8867eef9-9101-41f9-b3d7-6c6fed08bc0b" />
+</Solution>
